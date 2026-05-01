@@ -67,6 +67,12 @@ jobs:
         with:
           name: python-app
           path: .
+          
+      - name: Upload artifact  
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-app
+          path: .
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
